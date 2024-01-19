@@ -1,0 +1,84 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 600px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 12px;
+}
+#options{
+    position: relative;
+    width: 400px;
+    height: 150px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+#options button{
+    position: relative;
+    width: 80px;
+    padding:9px;
+    cursor: pointer;
+    border-radius: 9px;
+    border: none;
+    transition: ease-in-out 0.3s;
+}
+#options button:hover{
+    transform: scale(1.2);
+}
+#yes{
+    background-color:#01ce02;
+}
+#no{
+    background-color: #ff1801;
+    position: absolute;
+}
+#textYes{
+    width: 600px;
+    height: 50vh;
+    color: #fff;
+    background-color: #ff6390 ;
+    display: none;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    
+}
+#back{
+    position: relative;
+    width: 80px;
+    padding:9px;
+    background-color: #0275d8;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 9px;
+    border: none;
+    transition: ease-in-out 0.3s;
+}
+#back:hover{
+    transform: scale(1.2);
+}
+@media screen and (max-width:768px) {
+    body{
+        height: 60vh;
+    }
+    #textYes{
+        width: 400px;
+
+    }
+    #textYes h1{
+        font-size: 25px;
+    }
+}
